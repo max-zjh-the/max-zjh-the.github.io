@@ -27,38 +27,25 @@
 </head>
 <body>
 
-  <div class="container my-5">
+  <!-- Theme toggle: fixed top-right, visible on every page -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <!-- Moon: shown in light mode -->
+    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+    </svg>
+    <!-- Sun: shown in dark mode -->
+    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707"/>
+    </svg>
+  </button>
+
+  <main class="scroll-container">
+
+    <!-- Screen: About -->
+    <section class="screen" id="about">
+    <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-9 col-xxl-8">
-
-        <!-- Header -->
-        <div class="header">
-          <h1 class="m-0">Max Bahar</h1>
-          <div class="d-flex align-items-center gap-3">
-            <div>
-              <a href="#about">About</a>
-              <span class="spacer">/</span>
-              <a href="#skills">Skills</a>
-              <span class="spacer">/</span>
-              <a href="#featured-work">Featured Work</a>
-            </div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-              <!-- Moon: shown in light mode -->
-              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-              </svg>
-              <!-- Sun: shown in dark mode -->
-              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Divider About Me -->
-        <div class="divider mt-4 mb-3" id="about">
-          <h2>About</h2>
-        </div>
 
         <!-- Bio section -->
         <div class="row d-flex align-items-center justify-content-center">
@@ -72,7 +59,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin me-1" viewBox="0 0 16 16">
                   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
                 </svg> LinkedIn</a>
-              <a href="https://github.com/maxbahar" target="_blank" class="social-pill me-2 d-flex align-items-center">
+              <a href="https://github.com/max-zjh-the" target="_blank" class="social-pill me-2 d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github me-1" viewBox="0 0 16 16">
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                 </svg> GitHub</a>
@@ -86,299 +73,318 @@
 
           <!-- Bio Text -->
           <div class="col-12 col-md-7 col-xl-6 col-xxl-6 mt-3 mt-xl-0">
-            <div class="mb-2 mt-2 mt-xl-0 intro">Hi, I'm Max!</div>
+            <div class="divider mt-0 mb-3">
+                <h2>Max The</h2>
+            </div>
             <p class="mb-2">
-              I just finished my <b>MS in Data Science at Harvard</b> and am back in Jakarta. 
-              My work sits at the intersection of technology and operations, most recently on geospatial analytics at Alam Sutera and fraud detection at GoTo Financial (GoPay).
+              Data scientist/analyst with experience spanning data governance, fraud detection, and geospatial analytics.
+            </p>
+            <p class="mb-2">
+              Data Science MS @ Harvard. 
+            </p>
+            <p class="mb-2">
+              CS + Econ BA @ Boston College. 
             </p>
             <p class="mb-0">
-              Before grad school, I spent three years at Caliper Corporation in Boston doing spatial analysis for Fortune 500 clients including Amazon, Wayfair, Optum, and Assa Abloy.
+              Currently based in Jakarta, Indonesia.
             </p>
           </div>
 
         </div>
-
-        <!-- Divider Skills -->
-        <div class="divider mt-4 mb-3" id="skills">
-          <h2>Skills</h2>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="skills-section mb-2 px-2">
-          <div class="skill-group">
-            <div class="skill-group-label">Languages</div>
-            <div class="skill-pills">
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">JavaScript</span>
-              <span class="skill-pill">Stata</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">ML &amp; Modeling</div>
-            <div class="skill-pills">
-              <span class="skill-pill">XGBoost</span>
-              <span class="skill-pill">TensorFlow</span>
-              <span class="skill-pill">scikit-learn</span>
-              <span class="skill-pill">SHAP</span>
-              <span class="skill-pill">Random Forest</span>
-              <span class="skill-pill">LASSO</span>
-              <span class="skill-pill">BiLSTM</span>
-              <span class="skill-pill">SMOTE</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">Data Engineering</div>
-            <div class="skill-pills">
-              <span class="skill-pill">Pandas</span>
-              <span class="skill-pill">NumPy</span>
-              <span class="skill-pill">Dask</span>
-              <span class="skill-pill">GeoPandas</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">Visualization</div>
-            <div class="skill-pills">
-              <span class="skill-pill">Altair</span>
-              <span class="skill-pill">D3.js</span>
-              <span class="skill-pill">Leaflet.js</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-group-label">Platforms</div>
-            <div class="skill-pills">
-              <span class="skill-pill">Alibaba MaxCompute</span>
-              <span class="skill-pill">Maptitude</span>
-              <span class="skill-pill">Streamlit</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Divider Featured Work -->
-        <div class="divider my-4" id="featured-work">
-          <h2>Featured Work</h2>
-        </div>
-
-        <!-- Filter Tabs -->
-        <div class="filter-tabs mb-4 px-2">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
-          <button class="filter-btn" data-filter="geospatial">Geospatial</button>
-          <button class="filter-btn" data-filter="visualization">Visualization</button>
-          <button class="filter-btn" data-filter="research">Research</button>
-        </div>
-
-        <!-- Hero Card: GoTo Internship -->
-        <div class="hero-project-wrapper mb-4" data-category="machine-learning">
-          <div class="hero-card rounded">
-            <div class="hero-image-wrapper mb-3">
-              <img src="./img/qris.jpg" class="hero-img rounded">
-              <span class="featured-badge">&#9733; Featured</span>
-            </div>
-            <div class="mb-3 work-title">
-              <h4 class="mb-0">QRIS Scam Detection at GoTo Financial</h4>
-              <em>August 2025</em>
-            </div>
-            <p class="mb-2">
-              Addressed a core user friction problem at GoTo Financial (GoPay): reducing incorrectly blocked legitimate transactions in a QRIS scam detection system processing 3M+ transactions/day, without compromising detection performance.
-            </p>
-            <p class="mb-2">
-              Developed a large-scale feature set integrating transactional, behavioral, geographic, and identity verification signals in Python and SQL (Alibaba MaxCompute), applying multi-method feature selection (variance threshold, LASSO, random forest, XGBoost) to identify a high-signal subset; extended the production XGBoost model via incremental learning to incorporate new features while retaining prior model knowledge.
-            </p>
-            <p class="mb-3">
-              Conducted precision-recall tradeoff analysis across model configurations and presented threshold recommendations to the business team, contributing to a <b>58.6% reduction in blocked transactions</b> while sustaining scam detection performance.
-            </p>
-            <div class="skill-pills">
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">XGBoost</span>
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">Alibaba MaxCompute</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Grid -->
-        <div class="project-grid">
-
-          <!-- Alam Sutera Realty -->
-          <div class="project-card-wrapper" data-category="geospatial">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/alsut.png" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>Land Data Quality and Governance at Alam Sutera Realty</h5>
-                <em>January 2026</em>
-              </div>
-              <p class="mb-2">
-                Established the company's first data governance framework for land parcel data by partnering with mapping and legal division heads, building an automated health report that <b>reduced missing data from ~80% to ~10%</b> across a ~20,000-record database. Presented a data maturity assessment and infrastructure recommendations to company directors as part of a digital transformation initiative.
-              </p>
-              <div class="skill-pills mt-auto">
-                <span class="skill-pill">Python</span>
-              <span class="skill-pill">Leaflet.js</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Wearables -->
-          <div class="project-card-wrapper" data-category="visualization">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/wearables_plot.png" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>From Wearable Data to Actionable Stress Insights</h5>
-                <em>May 2025</em>
-              </div>
-              <p class="mb-2">
-                Built an interactive Streamlit visualization tool combining wearable biometric signals with user-annotated stress events, using Pandas for data cleaning and Altair for interactive time-series visualizations to help users identify personal stress patterns.
-              </p>
-              <p class="mt-auto mb-3"><a href="https://github.com/estherbrown1/WearablesTool" target="_blank">View repository &rarr;</a></p>
-              <div class="skill-pills">
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">Streamlit</span>
-                <span class="skill-pill">Altair</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Voter Turnout -->
-          <div class="project-card-wrapper" data-category="machine-learning">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/voter_turnout.png" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>Voter Turnout and Demographics in Massachusetts</h5>
-                <em>December 2024</em>
-              </div>
-              <p class="mb-2">
-                End-to-end ML pipeline on 2022 MA voter data: Census block-group demographics via GeoPandas, LASSO feature selection (38 to 13 predictors), tuned random forest regressor <b>(R&sup2; = 0.86 on test set)</b>, and SHAP analysis identifying income, language, ethnicity, and age as key drivers. Deployed as an interactive D3.js data product with choropleth maps and county-level turnout prediction.
-              </p>
-              <p class="mt-auto mb-3"><a href="https://maxbahar.github.io/voter-turnout-MA/" target="_blank">View interactive tool &rarr;</a></p>
-              <div class="skill-pills">
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">scikit-learn</span>
-                <span class="skill-pill">SHAP</span>
-                <span class="skill-pill">D3.js</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- CHESTER -->
-          <div class="project-card-wrapper" data-category="machine-learning">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/chester_architecture.png" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>Space Object Identification with Neural Networks (CHESTER)</h5>
-                <em>May 2025</em>
-              </div>
-              <p class="mb-2">
-                Designed CHESTER, a hierarchical TensorFlow neural network combining a feedforward State Model and Bidirectional LSTM to classify space objects as payloads, rocket bodies, or debris. Trained on Space-Track.org orbital elements using SMOTE and a staged freeze-and-fine-tune procedure, achieving <b>93.66% test accuracy</b> across 3 object categories.
-              </p>
-              <p class="mt-auto mb-3"><a href="https://github.com/tedinspace/space-object-identification" target="_blank">View repository &rarr;</a></p>
-              <div class="skill-pills">
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">TensorFlow</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tropical Cyclone -->
-          <div class="project-card-wrapper" data-category="research">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/tc_plot.png" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>Simulating Tropical Cyclone Potential Intensity</h5>
-                <em>December 2024</em>
-              </div>
-              <p class="mb-2">
-                Modeled climate change impacts on hurricane potential intensity across CMIP6 scenarios, applying GEV distribution fitting and Kolmogorov-Smirnov scoring to quantify shifts in extreme storm risk relevant to climate risk assessment. Developed the <i>tc_potential</i> and <i>tc_extremes</i> Python library modules with Dask for large-scale parallel climate data processing.
-              </p>
-              <p class="mt-auto mb-3"><a href="https://github.com/maxbahar/tc-potential-intensity" target="_blank">View repository &rarr;</a></p>
-              <div class="skill-pills">
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">Dask</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Banking Compliance -->
-          <div class="project-card-wrapper" data-category="geospatial">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/banking_compliance.png" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>Maptitude Banking Compliance Data</h5>
-                <em>June 2023</em>
-              </div>
-              <p class="mb-2">
-                Processed a 16M+ record, 99-field FFIEC HMDA mortgage loan dataset, aggregating loan-level data to Census tract geographies and integrating multi-source CRA compliance layers to produce analysis-ready geospatial datasets for a commercial banking analytics product.
-              </p>
-              <p class="mt-auto mb-3"><a href="https://www2.caliper.com/store/product/banking-compliance-data/" target="_blank">View product &rarr;</a></p>
-              <div class="skill-pills">
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">Maptitude</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Albertsons & Kroger -->
-          <div class="project-card-wrapper" data-category="geospatial">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/albertsons-kroger.webp" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>Albertsons &amp; Kroger Geographic Market Analysis</h5>
-                <em>October 2022</em>
-              </div>
-              <p class="mb-2">
-                Joined location and demographic datasets across ~40 Albertsons and Kroger subsidiary brands to analyze merger impact, running radius and drive-time analyses to estimate that 56% of the US mainland population lives within 5 miles of a combined store location, profiling geodemographic overlap across major US cities.
-              </p>
-              <p class="mt-auto mb-3"><a href="https://www.caliper.com/maptitude/blog/albertsons-and-kroger-geographic-market-analysis/default.htm" target="_blank">View blog post &rarr;</a></p>
-              <div class="skill-pills">
-                <span class="skill-pill">Maptitude</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Senior Thesis -->
-          <div class="project-card-wrapper" data-category="research">
-            <div class="project-card rounded">
-              <div class="mb-3">
-                <img src="./img/parental-migration.png" class="work-img rounded">
-              </div>
-              <div class="mb-2 work-title">
-                <h5>Long-term Effects of Parental Migration on Income: Evidence from Indonesia</h5>
-                <em>May 2021</em>
-              </div>
-              <p class="mb-2">
-                Econometric study using 21 years of panel data from the Indonesian Family Life Survey (IFLS, 22,000 individuals), applying instrumental variable regression using region-level migration rates to estimate the long-term causal impact of parental migration on child income.
-              </p>
-              <p class="mt-auto mb-3"><a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">View full paper &rarr;</a></p>
-              <div class="skill-pills">
-                <span class="skill-pill">Stata</span>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- end project-grid -->
 
       </div>
     </div>
-  </div>
+    </div>
+    </section>
+
+    <!-- Screen: Experience -->
+    <section class="screen" id="experience">
+    <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xxl-8">
+
+        <!-- Divider Experience -->
+        <div class="divider mt-4 mb-3">
+          <h2>Experience</h2>
+        </div>
+
+        <!-- Experience List -->
+        <ul class="experience-list">
+
+          <li class="experience-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h4 class="mb-0">GIS &amp; Land Data Intern @ Alam Sutera Realty</h4>
+                <em>2025</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Built the company's first land-data governance framework, <b>cutting missing data from ~80% to ~10%</b> across a ~20,000-record database. Shipped a Leaflet.js GIS tool that replaced a manual AutoCAD workflow for 20&ndash;30 monthly land acquisitions.</p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">Leaflet.js</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="experience-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h4 class="mb-0">Data Science Intern @ GoTo Financial (GoPay)</h4>
+                <em>2025</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Extended a production QRIS scam detection model via incremental learning, <b>reducing incorrectly blocked transactions by 58.6%</b> while sustaining detection performance. Engineered the underlying feature set in Python and SQL across Alibaba MaxCompute and GCP BigQuery.</p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">XGBoost</span>
+                  <span class="skill-pill">SQL</span>
+                  <span class="skill-pill">Alibaba MaxCompute</span>
+                  <span class="skill-pill">GCP BigQuery</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="experience-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h4 class="mb-0">Analyst @ Caliper Corporation</h4>
+                <em>2021 - 2024</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Advised Fortune 500 and government clients on demographic, routing, and territory analyses using Maptitude. Redesigned client trainings and application UX after identifying declining engagement, <b>improving software adoption across 100+ organizations</b>.</p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">Maptitude</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Screen: Other Projects -->
+    <section class="screen" id="other-projects">
+    <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xxl-8">
+
+        <!-- Divider Other Projects -->
+        <div class="divider mt-4 mb-3">
+          <h2>Projects</h2>
+        </div>
+
+        <!-- Other Projects List -->
+        <ul class="other-projects-list">
+
+          <li class="other-project-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h5 class="mb-0">Social Media Marketing Funnel Analysis @ Pillar</h5>
+                <em>2026</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Harvard Data Science Capstone with Pillar (YC-backed), identifying CTA-text drivers of click-through rate with gradient boosting models. Used an LLM judge to classify creator messages and analyzed Super Bowl-period engagement trends.</p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">XGBoost</span>
+                  <span class="skill-pill">LLM</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="other-project-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h5 class="mb-0">From Wearable Data to Actionable Stress Insights</h5>
+                <em>2025</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Interactive Streamlit tool pairing wearable biometric signals with user-annotated stress events for personal pattern discovery. <a href="https://github.com/estherbrown1/WearablesTool" target="_blank">View repository &rarr;</a></p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">Streamlit</span>
+                  <span class="skill-pill">Altair</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="other-project-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h5 class="mb-0">Space Object Identification with Neural Networks (CHESTER)</h5>
+                <em>2025</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Hierarchical TensorFlow network (feedforward + BiLSTM) classifying space objects from orbital elements, reaching 93.66% test accuracy. <a href="https://github.com/tedinspace/space-object-identification" target="_blank">View repository &rarr;</a></p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">TensorFlow</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="other-project-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h5 class="mb-0">Voter Turnout and Demographics in Massachusetts</h5>
+                <em>2024</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Built an end-to-end ML pipeline on 2022 MA voter data, tuning a random forest (R&sup2; = 0.86) and using SHAP to identify key turnout drivers. Deployed as an interactive D3.js tool with county-level predictions. <a href="https://max-zjh-the.github.io/voter-turnout-MA/" target="_blank">View interactive tool &rarr;</a></p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">scikit-learn</span>
+                  <span class="skill-pill">SHAP</span>
+                  <span class="skill-pill">D3.js</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="other-project-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h5 class="mb-0">Simulating Tropical Cyclone Potential Intensity</h5>
+                <em>2024</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Modeled climate change impacts on hurricane potential intensity across CMIP6 scenarios using GEV fitting and Kolmogorov-Smirnov scoring, with a Dask-parallelized Python library. <a href="https://github.com/max-zjh-the/tc-potential-intensity" target="_blank">View repository &rarr;</a></p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">Dask</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- <li class="other-project-item">
+            <button class="accordion-toggle" aria-expanded="false">
+              <div class="work-title">
+                <h5 class="mb-0">Long-term Effects of Parental Migration on Income: Evidence from Indonesia</h5>
+                <em>May 2021</em>
+              </div>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p class="mb-2">Senior thesis using 21 years of Indonesian Family Life Survey panel data and instrumental variable regression to estimate the causal effect of parental migration on child income. <a href="https://dlib.bc.edu/islandora/object/bc-ir:109165/datastream/PDF/view" target="_blank">View full paper &rarr;</a></p>
+                <div class="skill-pills">
+                  <span class="skill-pill">Stata</span>
+                </div>
+              </div>
+            </div>
+          </li> -->
+
+        </ul>
+
+      </div>
+    </div>
+    </div>
+    </section>
+
+  </main>
+
+  <!-- Scroll dot indicator -->
+  <nav class="scroll-dots" aria-label="Section navigation">
+    <a href="#about" class="scroll-dot active" data-section="about" aria-label="About"></a>
+    <a href="#experience" class="scroll-dot" data-section="experience" aria-label="Experience"></a>
+    <a href="#other-projects" class="scroll-dot" data-section="other-projects" aria-label="Other Projects"></a>
+  </nav>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <!-- JS file to read data externally -->
   <script src="js/fetch.js"></script>
+
+  <script>
+    // Collapsible experience / project items - one open at a time per list
+    (function () {
+      document.querySelectorAll('.experience-list, .other-projects-list').forEach(function (list) {
+        var items = list.querySelectorAll(':scope > li');
+        items.forEach(function (item) {
+          var toggle = item.querySelector('.accordion-toggle');
+          toggle.addEventListener('click', function () {
+            var isOpen = item.classList.contains('open');
+            items.forEach(function (other) {
+              other.classList.remove('open');
+              other.querySelector('.accordion-toggle').setAttribute('aria-expanded', 'false');
+            });
+            if (!isOpen) {
+              item.classList.add('open');
+              toggle.setAttribute('aria-expanded', 'true');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    // Dot indicators scroll the slide container (document body no longer scrolls)
+    (function () {
+      document.querySelectorAll('.scroll-dot').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          var target = document.querySelector(this.getAttribute('href'));
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    // Highlight the dot matching the section currently in view
+    (function () {
+      var screens = document.querySelectorAll('.screen');
+      var dots = document.querySelectorAll('.scroll-dot');
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            dots.forEach(function (dot) {
+              dot.classList.toggle('active', dot.dataset.section === entry.target.id);
+            });
+          }
+        });
+      }, { root: document.querySelector('.scroll-container'), threshold: 0.5 });
+      screens.forEach(function (screen) { observer.observe(screen); });
+    })();
+  </script>
 
   <script>
     // Dark/light mode toggle
@@ -393,22 +399,6 @@
     })();
   </script>
 
-  <script>
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', function () {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        const filter = this.dataset.filter;
-
-        const hero = document.querySelector('.hero-project-wrapper');
-        hero.style.display = (filter === 'all' || hero.dataset.category === filter) ? '' : 'none';
-
-        document.querySelectorAll('.project-card-wrapper').forEach(card => {
-          card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>
